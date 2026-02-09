@@ -5,6 +5,7 @@ import com.notzed.airbnbapp.entity.Hotel;
 import com.notzed.airbnbapp.entity.Room;
 import com.notzed.airbnbapp.exception.ResourceNotFoundException;
 import com.notzed.airbnbapp.repository.HotelRepository;
+import com.notzed.airbnbapp.repository.RoomRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +22,8 @@ public class HotelServiceImpl implements HotelService {
     private final ModelMapper modelMapper;
 
     private final InventoryService inventoryService;
+
+    private final RoomRepository roomRepository;
 
     @Override
     public HotelDto createNewHotel(HotelDto hotelDto){
@@ -54,10 +57,11 @@ public class HotelServiceImpl implements HotelService {
     public void deleteHotelById(Long id){
         Hotel hotel = hotelRepository.findById(id).orElseThrow((() -> new ResourceNotFoundException("Hotel not found with ID: "+ id)));
 
-        hotelRepository.deleteById(id);
         for(Room room: hotel.getRooms()){
-            inventoryService.deleteFutureInventories(room);
+            inventoryService.deleteAllInventories(room);
+            roomRepository.deleteById(room.getId());
         }
+        hotelRepository.deleteById(id);
     }
 
     @Override
