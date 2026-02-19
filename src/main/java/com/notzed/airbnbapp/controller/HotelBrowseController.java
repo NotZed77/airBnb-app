@@ -2,6 +2,7 @@ package com.notzed.airbnbapp.controller;
 
 import com.notzed.airbnbapp.dto.HotelDto;
 import com.notzed.airbnbapp.dto.HotelInfoDto;
+import com.notzed.airbnbapp.dto.HotelPriceDto;
 import com.notzed.airbnbapp.dto.HotelSearchRequest;
 import com.notzed.airbnbapp.entity.Inventory;
 import com.notzed.airbnbapp.service.HotelService;
@@ -23,9 +24,9 @@ public class HotelBrowseController {
     private final HotelService hotelService;
 
     @GetMapping("/search")
-    public ResponseEntity<Page<HotelDto>> searchHotels(@RequestBody HotelSearchRequest hotelSearchRequest){
+    public ResponseEntity<Page<HotelPriceDto>> searchHotels(@RequestBody HotelSearchRequest hotelSearchRequest){
 
-        Page<HotelDto> page = inventoryService.searchHotels(hotelSearchRequest);
+        var page = inventoryService.searchHotels(hotelSearchRequest);
         return ResponseEntity.ok(page);
     }
 
