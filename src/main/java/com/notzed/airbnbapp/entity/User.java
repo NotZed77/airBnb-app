@@ -3,6 +3,7 @@ package com.notzed.airbnbapp.entity;
 import com.notzed.airbnbapp.entity.Type.Role;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -30,6 +31,7 @@ public class User implements UserDetails {
     @Column(nullable = false)
     private String password;
 
+    @NonNull
     private String name;
 
     @ElementCollection(fetch = FetchType.EAGER)
