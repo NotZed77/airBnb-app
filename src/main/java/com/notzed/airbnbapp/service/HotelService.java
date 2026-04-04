@@ -3,6 +3,8 @@ package com.notzed.airbnbapp.service;
 import com.notzed.airbnbapp.dto.HotelDto;
 import com.notzed.airbnbapp.dto.HotelInfoDto;
 
+import java.util.List;
+
 public interface HotelService {
     HotelDto createNewHotel(HotelDto hotelDto);
 
@@ -15,4 +17,6 @@ public interface HotelService {
      void activateHotel(Long hotelId);
 
     HotelInfoDto getHotelInfoById(Long hotelId);
+
+    List<HotelDto> getAllHotels();
 }
