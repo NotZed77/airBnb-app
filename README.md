@@ -10,7 +10,7 @@ Airbnb Hotel System — This project provides API implementations for managing h
 
 ✅ **Overview**
 1. **Entities Defined**
- <img width="241" height="357" alt="image" src="https://github.com/user-attachments/assets/949a3c3a-788d-473b-9f7b-ef5cc34a9bb9" />
+ <img width="308" height="347" alt="image" src="https://github.com/user-attachments/assets/d0398f83-256f-480f-aa6a-68a84f909de8" />
 
 2. **Database Design**
    <img width="849" height="881" alt="image" src="https://github.com/user-attachments/assets/02040944-81a1-4838-abb1-18137256cebd" />
@@ -32,6 +32,7 @@ Airbnb Hotel System — This project provides API implementations for managing h
 
 5. **Configuration**
    - Used Stripe Web hook CLI and run the command to listen the payment status:
+     
        stripe listen --forward-to localhost:8081/api/v1/webhook/payment
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
