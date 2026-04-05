@@ -19,7 +19,7 @@ Airbnb Hotel System — This project provides API implementations for managing h
    <img width="849" height="881" alt="image" src="https://github.com/user-attachments/assets/02040944-81a1-4838-abb1-18137256cebd" />
    
 
-4. **REST API**
+4. **API Endpoints**
    <img width="1873" height="1058" alt="image" src="https://github.com/user-attachments/assets/d9509fcf-0f40-4fd2-920b-4be865313343" />
 
   <img width="1882" height="832" alt="image" src="https://github.com/user-attachments/assets/ac7d7543-6246-4893-a802-0f37819d9059" />
@@ -44,4 +44,3 @@ Airbnb Hotel System — This project provides API implementations for managing h
 **Swagger URL**
 - http://localhost:8081/api/v1/v3/api-docs
 - http://localhost:8081/swagger-ui/index.html#/
-- 
