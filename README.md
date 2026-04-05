@@ -3,7 +3,8 @@ Airbnb Hotel System — This project provides API implementations for managing h
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<img width="948" height="718" alt="image" src="https://github.com/user-attachments/assets/9573be56-0b19-4a61-91f8-6798aded520f" />
+<img width="850" height="654" alt="image" src="https://github.com/user-attachments/assets/6250df12-326d-4ff9-8ac0-7dc8b3ece0b3" />
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
