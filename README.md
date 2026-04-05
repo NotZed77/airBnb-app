@@ -11,9 +11,11 @@ Airbnb Hotel System — This project provides API implementations for managing h
 ✅ **Overview**
 1. **Entities Defined**
  <img width="308" height="347" alt="image" src="https://github.com/user-attachments/assets/d0398f83-256f-480f-aa6a-68a84f909de8" />
+ 
 
 2. **Database Design**
    <img width="849" height="881" alt="image" src="https://github.com/user-attachments/assets/02040944-81a1-4838-abb1-18137256cebd" />
+   
 
 3. **REST API**
    <img width="1873" height="1058" alt="image" src="https://github.com/user-attachments/assets/d9509fcf-0f40-4fd2-920b-4be865313343" />
