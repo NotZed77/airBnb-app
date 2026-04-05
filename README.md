@@ -20,11 +20,15 @@ Airbnb Hotel System — This project provides API implementations for managing h
    
 
 4. **API Endpoints**
+
    <img width="1873" height="1058" alt="image" src="https://github.com/user-attachments/assets/d9509fcf-0f40-4fd2-920b-4be865313343" />
+
 
   <img width="1882" height="832" alt="image" src="https://github.com/user-attachments/assets/ac7d7543-6246-4893-a802-0f37819d9059" />
 
+
   <img width="1675" height="864" alt="image" src="https://github.com/user-attachments/assets/f4f0e4d1-d6ba-4078-8d52-5fd9f078b3c7" />
+
 
    - Implemented CRUD Operations for all entities.
    - Used Spring MVC Architecture to design the application.
